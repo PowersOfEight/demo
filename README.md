@@ -45,3 +45,9 @@ To commit the changes we can use
 git commit -am "<commit message>"
 ```
 
+## Actions
+
+* __Branching__: We can start a new branch with the following command 
+```
+    git checkout -b <new_branch_name>
+```
