@@ -1,13 +1,13 @@
 CDIR=./C
 CFLAGS= -g -Wall
 
-hello: hello.o
+$(CDIR)/hello: $(CDIR)/hello.o
 	$(CC) $(CFLAGS) -o $(CDIR)/hello $(CDIR)/hello.o
 
-hello.o: hello.c
-	$(CC) $(CFLAGS) -c $(CDIR)/hello.c
+$(CDIR)/hello.o: $(CDIR)/hello.c
+	$(CC) $(CFLAGS) -c $(CDIR)/hello.c -o $(CDIR)/hello.o
 
-run: hello 
+run: $(CDIR)/hello 
 	$(CDIR)/hello
 
 clean:
