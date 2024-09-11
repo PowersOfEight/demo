@@ -28,6 +28,20 @@ git add <filename>
 ```
 Lets try it on `README.md` (this file)
 ```
+PS C:\Development\demo> git add README.md
+PS C:\Development\demo> git status
+On branch main
+Your branch is up to date with 'origin/main'.
 
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+PS C:\Development\demo> 
+```
+
+To commit the changes we can use
+```
+git commit -am "<commit message>"
 ```
 
